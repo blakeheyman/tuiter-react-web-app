@@ -29,3 +29,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+.wd-padding-12 {
+  padding: 12px;
+}
