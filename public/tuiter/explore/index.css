@@ -1,47 +1,9 @@
-body {
-  background-color: black;
-  margin-left: 16px;
-  font-family: sans-serif;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 8px 0px;
-}
-
-img {
-  object-fit: cover;
-}
-
 .wd-search {
   color: white;
   background-color: darkgray;
   border-radius: 20px;
   width: 90%;
   padding: 5px;
-}
-
-.wd-grid-row {
-  clear: both;
-}
-
-.wd-grid-col-1 {
-  float: left;
-  width: 8.33%;
-}
-
-.wd-grid-col-10 {
-  width: 83.3333%;
-  float: left;
-}
-
-.wd-grid-col-11 {
-  width: 91.667%;
-  float: left;
 }
 
 .wd-tab {
@@ -56,21 +18,10 @@ img {
   border-bottom: 2px solid rgb(29, 161, 242);
 }
 
-.wd-text-secondary {
-  font-size: 13px;
-  color: rgb(110, 118, 125);
-}
-
 .wd-divider {
   border-top: 2px solid rgb(110, 118, 125);
   background-color: rgb(47, 51, 54);
   height: 12px;
-}
-
-.wd-border {
-  padding: 10px 16px;
-  border: 2px solid rgb(47, 51, 54);
-  overflow: hidden;
 }
 
 .wd-post-image {
