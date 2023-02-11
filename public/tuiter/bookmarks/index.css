@@ -1,0 +1,35 @@
+.wd-title {
+  font-size: 20px;
+}
+
+.wd-horizontal-margin {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.wd-15px-font {
+  font-size: 15px;
+}
+
+.wd-content {
+  max-width: 506px;
+}
+
+.wd-border-no-padding {
+  border: 1px solid rgb(47, 51, 54);
+  overflow: hidden;
+}
+
+.wd-round-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.wd-round-bottom {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.wd-padding-12 {
+  padding: 12px;
+}
