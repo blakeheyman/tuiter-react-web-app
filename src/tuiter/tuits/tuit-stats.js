@@ -1,22 +1,29 @@
-const TuitStats = ({ replies, retuits, liked, likes }) => {
+import { toggleLike } from "../reducers/tuits-reducer";
+import { useDispatch } from "react-redux";
+
+const TuitStats = (post) => {
+  const dispatch = useDispatch();
+  const likeClicked = (post) => {
+    dispatch(toggleLike(post));
+  };
   return (
     <div className="row">
       <div className="col-3">
         <i className="bi-chat" />
-        {` ${replies}`}
+        {` ${post.replies}`}
       </div>
       <div className="col-3">
         <i className="bi-arrow-repeat" />
-        {` ${retuits}`}
+        {` ${post.retuits}`}
       </div>
-      <div className="col-3">
-        {liked ? (
+      <div className="col-3" onClick={() => likeClicked(post)}>
+        {post.liked ? (
           <i className="bi-heart-fill" style={{ color: "red" }} />
         ) : (
           <i className="bi-heart" />
         )}
 
-        {` ${likes}`}
+        {` ${post.likes}`}
       </div>
       <div className="col-3">
         <i className="bi-share" />
