@@ -1,6 +1,14 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
+import { useDispatch } from "react-redux";
+import { deleteTuit } from "../reducers/tuits-reducer";
+
 const TuitItem = ({ post }) => {
+  const dispatch = useDispatch();
+  const deleteTuitHandler = (id) => {
+    dispatch(deleteTuit(id));
+  };
+
   return (
     <li className="list-group-item">
       <div className="row">
@@ -13,6 +21,10 @@ const TuitItem = ({ post }) => {
         </div>
         <div className="col-10">
           <div>
+            <i
+              className="bi bi-x-lg float-end"
+              onClick={() => deleteTuitHandler(post._id)}
+            ></i>
             <span className="fw-bolder">{post.userName}</span>{" "}
             <i class="bi-patch-check-fill" style={{ color: "dodgerblue" }} />{" "}
             {post.handle}
