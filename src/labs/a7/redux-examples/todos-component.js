@@ -58,7 +58,6 @@ const Todos = () => {
               onChange={() => toggleTodoDone(todo)}
               className="me-2"
             />
-
             {todo.do}
           </li>
         ))}

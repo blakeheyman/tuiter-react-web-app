@@ -8,6 +8,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         Tuiter
       </a>
       <a
+        href="/tuiter"
         className={`list-group-item
                     ${active === "home" ? "active" : ""}`}
       >
@@ -15,6 +16,7 @@ const NavigationSidebar = ({ active = "explore" }) => {
         Home
       </a>
       <a
+        href="/tuiter/explore"
         className={`list-group-item
                     ${active === "explore" ? "active" : ""}`}
       >
