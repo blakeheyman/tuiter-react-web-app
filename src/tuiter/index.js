@@ -10,7 +10,7 @@ import { Routes, Route } from "react-router";
 import HomeComponent from "./home";
 import PostSummaryList from "./post-summary-list";
 const store = configureStore({
-  reducer: { who: whoReducer, tuits: tuitsReducer },
+  reducer: { who: whoReducer, tuitsData: tuitsReducer },
 });
 
 function Tuiter() {
